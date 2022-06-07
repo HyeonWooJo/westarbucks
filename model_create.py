@@ -100,7 +100,7 @@ Image.objects.create(image_url = "https://image.istarbucks.co.kr/upload/store/sk
 Size.objects.create(name="Tall(톨)", size_ml="355ml", size_fluid_ounce="12 fl oz")
 Size.objects.create(name="Grande(그란데)", size_ml="473ml", size_fluid_ounce="16 fl oz")
 Size.objects.create(name="Venti(벤티)", size_ml="591ml", size_fluid_ounce="20 fl oz")
-Size.objects.create(name="없음", size_ml="없음", size_fluid_ounce="없음")
+# Size.objects.create(name="없음", size_ml="없음", size_fluid_ounce="없음")
 
 
 # Nutrition Create
@@ -133,8 +133,7 @@ Nutrition.objects.create(
     sugars_g = 22,
     protein_g = 88,
     caffeine_mg = 75,
-    drink_id = 3,
-    size_id = 4
+    drink_id = 3
 )
 
 Nutrition.objects.create(
@@ -144,8 +143,7 @@ Nutrition.objects.create(
     sugars_g =7 ,
     protein_g = 10,
     caffeine_mg = 0,
-    drink_id = 4,
-    size_id = 4
+    drink_id = 4
 )
 
 Nutrition.objects.create(
@@ -155,7 +153,6 @@ Nutrition.objects.create(
     sugars_g = 41,
     protein_g = 6,
     caffeine_mg = 0,
-    drink_id = 5,
-    size_id = 4
+    drink_id = 5
 )
 

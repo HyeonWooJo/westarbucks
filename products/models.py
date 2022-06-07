@@ -53,7 +53,7 @@ class Nutrition(models.Model):
     protein_g = models.DecimalField(max_digits=10, decimal_places=2)
     caffeine_mg = models.DecimalField(max_digits=10, decimal_places=2)
     drink = models.ForeignKey('Drink', on_delete=models.CASCADE)
-    size = models.ForeignKey('Size', on_delete=models.CASCADE)
+    size = models.ForeignKey('Size', null=True, on_delete=models.CASCADE)
 
     class Meta:
         db_table = 'nutritions'
